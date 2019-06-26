@@ -41,6 +41,12 @@ class ViewController: UIViewController {
         
         wrongPositionCountLabel.text = "\(wrongPositionCnt) цифр угаданы на неверной позиции"
         correctPositionCountLabel.text = "\(correctPositionCnt) цифр угаданы на верной позиции"
+        
+        if correctPositionCnt == targetNumber.count {
+            view.backgroundColor = UIColor(red: 120/255, green: 240/255, blue: 170/255, alpha: 1)
+        } else {
+            view.backgroundColor = UIColor.white
+        }
     }
 }
 
