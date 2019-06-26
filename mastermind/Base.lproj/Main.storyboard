@@ -18,9 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B3W-77-O5O">
-                                <rect key="frame" x="20" y="433" width="339" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B3W-77-O5O">
+                                <rect key="frame" x="16" y="396" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -28,37 +27,49 @@
                                     <action selector="numberTextFieldChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="95I-7g-hTT"/>
                                 </connections>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0 цифр угаданы на верной позиции" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ufq-r5-g2Z">
-                                <rect key="frame" x="20" y="614" width="286" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Привет! Отгадай число" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kCy-x2-PPO">
+                                <rect key="frame" x="94" y="307" width="187" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Привет! Отгадай число" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kCy-x2-PPO">
-                                <rect key="frame" x="94" y="294" width="187" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ech-Re-yWA">
-                                <rect key="frame" x="137" y="471" width="100" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ech-Re-yWA">
+                                <rect key="frame" x="137.66666666666666" y="473" width="100" height="30"/>
                                 <state key="normal" title="Попробовать!"/>
                                 <connections>
                                     <action selector="tryPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ABu-Rw-2Ab"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0 цифр угаданы на неверной позиции" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sTZ-Gl-6Rd">
-                                <rect key="frame" x="20" y="573" width="305" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 цифр угаданы на неверной позиции" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sTZ-Gl-6Rd">
+                                <rect key="frame" x="16" y="555" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 цифр угаданы на верной позиции" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ufq-r5-g2Z">
+                                <rect key="frame" x="16" y="598" width="343" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sTZ-Gl-6Rd" secondAttribute="trailing" constant="16" id="0OP-SB-OzM"/>
+                            <constraint firstItem="kCy-x2-PPO" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="6iE-sf-mry"/>
+                            <constraint firstItem="B3W-77-O5O" firstAttribute="top" secondItem="kCy-x2-PPO" secondAttribute="bottom" constant="68" id="7oY-Bc-gnr"/>
+                            <constraint firstItem="Ufq-r5-g2Z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="99U-XQ-kC4"/>
+                            <constraint firstItem="Ufq-r5-g2Z" firstAttribute="top" secondItem="sTZ-Gl-6Rd" secondAttribute="bottom" constant="22" id="DuO-6o-8T5"/>
+                            <constraint firstItem="sTZ-Gl-6Rd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="FpZ-VI-Ami"/>
+                            <constraint firstItem="B3W-77-O5O" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Mxd-Fc-nzW"/>
+                            <constraint firstItem="B3W-77-O5O" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="VnY-Ml-Kb3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ufq-r5-g2Z" secondAttribute="trailing" constant="16" id="hOw-cx-FnM"/>
+                            <constraint firstItem="ech-Re-yWA" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="kBa-oS-8wa"/>
+                            <constraint firstItem="sTZ-Gl-6Rd" firstAttribute="top" secondItem="ech-Re-yWA" secondAttribute="bottom" constant="52" id="otr-Er-xdI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="B3W-77-O5O" secondAttribute="trailing" constant="16" id="qea-9r-EKi"/>
+                            <constraint firstItem="B3W-77-O5O" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="wPQ-Zh-5Q0"/>
+                            <constraint firstItem="ech-Re-yWA" firstAttribute="top" secondItem="B3W-77-O5O" secondAttribute="bottom" constant="47" id="yFd-Vf-n1o"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
