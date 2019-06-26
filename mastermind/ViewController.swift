@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var correctPositionCountLabel: UILabel!
     
     var targetNumber = "1234"
+    var allowedSymbols: [Character] = ["1", "2", "3", "4", "5", "6"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,6 +48,17 @@ class ViewController: UIViewController {
         } else {
             view.backgroundColor = UIColor.white
         }
+    }
+    
+    @IBAction func numberTextFieldChanged(_ sender: Any) {
+        guard var text = numberTextField.text else {
+            return
+        }
+        
+        text.removeAll(where: { character in
+            !allowedSymbols.contains(character)
+        })
+        numberTextField.text = String(text.prefix(targetNumber.count))
     }
 }
 
